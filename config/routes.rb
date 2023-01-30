@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pages/home'
+  get 'pages/about'
   devise_for :users, controllers: {
     confirmations: 'users/confirmations',
     passwords: 'users/passwords',
@@ -6,6 +8,6 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     unlocks: 'users/unlocks'
   }
-  get 'about', to: 'about#index'
-  root "home#index"
+  get 'about', to: 'pages#about'
+  root "pages#home"
 end
