@@ -7,6 +7,10 @@ Rails.application.routes.draw do
     unlocks: 'users/unlocks'
   }
   get 'about', to: 'pages#about'
-  get 'features', to: 'pages#features'
+  get 'features', to: 'pages#features', as: :user_root
+
+  get 'ai_images', to: 'ai_images#index'
+  get 'ai_stories', to: 'ai_stories#index'
+
   root "pages#home"
 end
