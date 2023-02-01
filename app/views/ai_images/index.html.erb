@@ -1,7 +1,4 @@
-<h1>Generate an image</h1>
-<%= simple_form_for :image_request, url: ai_images_path do |f| %>
-  <div class="form-group">
-    <%= f.text_area :prompt, class:'form-control' %>
-  </div>
-  <%= f.submit "Submit", class:'btn btn-outline-secondary' %>
-<% end %>
+<div class="container mt-5">
+  <h1>Generate an image</h1>
+  <%= render partial: 'image_request_form' %>
+</div>
