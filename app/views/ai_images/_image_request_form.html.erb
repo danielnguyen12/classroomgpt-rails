@@ -1,4 +1,4 @@
-<%= simple_form_for :image_request, url: ai_images_path do |f| %>
+<%= simple_form_for @ai_image do |f| %>
   <div class="form-group">
     <%= f.text_area :prompt, class:'form-control' %>
   </div>

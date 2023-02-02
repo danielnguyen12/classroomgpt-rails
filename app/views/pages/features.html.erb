@@ -8,7 +8,8 @@
       <div>
         <h3 class="fs-2">Generate an image</h3>
         <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <%= link_to 'Create', ai_images_path, class:'btn btn-outline-secondary' %>
+        <%= link_to 'View Images', ai_images_path, class:'btn btn-primary' %>
+        <%= link_to 'Create', new_ai_image_path, class:'btn btn-outline-secondary' %>
       </div>
     </div>
     <div class="col d-flex align-items-start">
@@ -18,7 +19,8 @@
       <div>
         <h3 class="fs-2">Write a story</h3>
         <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <%= link_to 'Create', ai_stories_path, class:'btn btn-outline-secondary' %>
+        <%= link_to 'View Stories', ai_stories_path, class:'btn btn-primary' %>
+        <%= link_to 'Create', new_ai_story_path, class:'btn btn-outline-secondary' %>
       </div>
     </div>
   </div>

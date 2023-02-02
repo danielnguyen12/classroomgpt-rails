@@ -9,10 +9,8 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'features', to: 'pages#features', as: :user_root
 
-  get 'ai_images', to: 'ai_images#index'
-  post 'ai_images', to: 'ai_images#image_request'
-  get 'ai_stories', to: 'ai_stories#index'
-  post 'ai_stories', to: 'ai_stories#story_request'
+  resources :ai_images, only: [:index, :new, :create]
+  resources :ai_stories, only: [:index, :new, :create]
 
   root "pages#home"
 end
