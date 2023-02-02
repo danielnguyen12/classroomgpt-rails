@@ -7,13 +7,14 @@ class AiImagesController < ApplicationController
   def image_request
     client = OpenAI::Client.new
     prompt = image_request_params[:prompt]
-    response = client.images.generate(
-      parameters: {
-        prompt: prompt,
-        size: "256x256"
-        }
-      )
-    puts response.dig("data", 0, "url")
+    # response = client.images.generate(
+    #   parameters: {
+    #     prompt: prompt,
+    #     size: "256x256"
+    #     }
+    #   )
+    # puts response.dig("data", 0, "url")
+    puts prompt
   end
 
   private
