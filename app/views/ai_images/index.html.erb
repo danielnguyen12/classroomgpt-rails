@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-between align-items-center">
   <h1>Generated Images</h1>
-  <%= link_to 'Create', new_ai_image_path, class:'btn btn-outline-secondary' %>
+  <%= link_to 'Create new image', new_ai_image_path, class:'btn btn-outline-secondary' %>
   <% if current_user.ai_images.any? %>
     <%= render @ai_images %>
   <% end %>
